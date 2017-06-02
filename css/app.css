@@ -1,0 +1,243 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #151515;
+    font-family: 'Press Start 2P', cursive;
+}
+
+canvas {
+    display: block;
+    border: 1px solid red;
+    margin-left: 0px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.wrapper {
+    margin: 0 auto;
+}
+
+.batman {
+    position: relative;
+    top: 0;
+}
+
+.batman img {
+    position: absolute;
+    top: -10px;
+    left: 0px;
+    width: 1200px;
+    height: 656px;
+}
+
+.read-instructions {
+    font-size: 25px;
+    color: #ff0000;
+    text-decoration: none;
+}
+
+.instructions {
+    margin-top: 10px;
+    margin-left: 1210px;
+    font-family: sans-serif;
+    color: #ffffff;
+}
+
+.controls {
+    color: #00ffff;
+    display: block;
+    margin:15px 0 15px 0;
+}
+
+.score,
+.lives,
+.pony {
+    display: inline-block;
+    margin-left: 1210px;
+    color: white;
+    font-size: 1.6em;
+    vertical-align: middle;
+}
+
+.score,
+.pony {
+    margin-top: 25px;
+}
+.wrapper .play {
+    color: purple;
+}
+.play,
+.resetgame {
+    margin-left: 1210px;
+    margin-top: 15px;
+    color: green;
+    font-size: 1.7em;
+    cursor: pointer;
+    border-radius: 8px;
+    font-family: 'Press Start 2P', cursive;
+    width: 220px;
+}
+
+.key {
+    color: #aaffdd;
+}
+
+.live-count {
+    display: inline-block;
+    width: 185px;
+    height: 67px;
+    background: url(../img/threehearts.png) no-repeat;
+}
+
+.presentation {
+    margin-top: 85px;
+    font-size:30px;
+}
+
+.presentation a {
+    color: #ff0000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.game-over,
+.game-over-overlay {
+    margin: auto;
+    width: 1200px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    display: none;
+}
+
+.game-over-overlay {
+    height: 656px;
+    background-color: black;
+    opacity: .5;
+}
+
+.game-over-overlay img {
+    width: 1200px;
+    height: 656px;
+}
+
+.game-over {
+    height: 200px;
+    text-align: center;
+    color: white;
+}
+
+.game-over h1 {
+    font-size: 3em;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+.game-over button {
+    margin-top: 469px;
+    font-size: 1.7em;
+    font-family: 'Gloria Hallelujah', cursive;
+    color: green;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 250px;
+}
+
+.container {
+    width: 1200px;
+    border: 1px solid #00ff00;
+    color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    background: #000000;
+    z-index: 99999;
+    display: none;
+}
+
+.container:target {
+    display: block;
+}
+
+.container > div {
+    border-bottom: 1px solid #ffffff;
+    display: inline-block;
+    width: 1200px;
+    padding: 7px 0 7px 0;
+    font-size: 26px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.container .pony-image {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    background: url(../img/sprite.png);
+    background-position: 0px -215px;
+}
+
+.container .enemy-image {
+    display: inline-block;
+    width: 75px;
+    height: 60px;
+    background: url(../img/sprite.png);
+    background-position: -30px -100px;
+}
+
+.container .asteroid-image {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: url(../img/sprite.png);
+    background-position: 0px 0px;
+}
+
+.container .joker-image {
+    display: inline-block;
+    width: 85px;
+    height: 100px;
+    background: url(../img/sprite.png);
+    background-position: 0px -390px;
+}
+
+.container .life-image {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url(../img/sprite.png);
+    background-position: 0px -340px;
+}
+
+.container .boss-image {
+    display: inline-block;
+    width: 120px;
+    height: 115px;
+    background: url(../img/sprite.png);
+    background-position: 0px -550px;
+}
+
+.close {
+    float: right;
+    font-size: 40px;
+    font-weight: 700;
+    padding: 10px 10px 0 0;
+    line-height: 1;
+    color: #ffffff;
+    text-shadow: 0 1px 0 #fff;
+    text-decoration: none;
+}
+
+@media screen and (max-width:1441px) {
+    .score,
+    .lives,
+    .pony {
+        font-size: 1.2em;
+    }
+}

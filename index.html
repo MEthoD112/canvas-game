@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Batman in the space</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="img/favicon.jpg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Barrio|Gloria+Hallelujah" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+    <div id="game-over-overlay" class="game-over-overlay">
+        <img src="img/joker.jpg" alt="here must be a picture">
+    </div>
+    <div id="game-over" class="game-over">
+        <h1>GAME OVER</h1>
+        <button id="play-again">Play Again</button>
+    </div>
+    <div class="wrapper">
+        <div class="batman">
+            <img src="img/batman.jpg" alt="here must be a picture">
+        </div>
+        <div id="instructions" class="instructions">
+            <a href="#details" class="read-instructions">Click to read instruction</a>
+            <span class="controls">Controls:</span>
+            <div>
+                <span>Move with</span>
+                <span class="key">arrows</span>
+            </div>
+            <div>
+                <span>Shoot with</span>
+                <span class="key">Z</span>
+            </div>
+            <div>
+                <span>Kick with</span>
+                <span class="key">X</span>
+            </div>
+        </div>
+        <div id="score" class="score">
+            <span>Scores: </span>
+            <span id="score-count"></span>
+        </div>
+        <div class="lives">
+            <span>Lives: </span>
+            <span class="live-count" id="live-count"></span>
+        </div>
+        <div class="pony">
+            <span>Pony saved: </span>
+            <span id="pony-count"></span>
+        </div>
+        <button id="play" class="play">Play Game</button>
+        <button class="resetgame" id="resetgame">Reset Game</button>
+        <div id="topscore" class="score">
+            <span>Top score: </span>
+            <span id="top-score-count"></span>
+        </div>
+        <div class="presentation">
+            <a href="http://slides.com/method112/batman-in-the-space" target="blanck">Presentation</a>
+        </div>
+    </div>
+    <div class="container" id="details">
+        <a href="#close" title="Close" class="close">X</a>
+        <div>
+            <span>Game: Batman in the space</span>
+        </div>
+        <div>
+            <span>Goal: To get as much score points as possible</span>
+        </div>
+        <div>
+            <div class="pony-image"></div>
+            <span>Save pony by touching it and get 200 scores</span>
+        </div>
+        <div>
+            <div class="enemy-image"></div>
+            <span>Kill grifon by shooting and get 100 scores</span>
+        </div>
+        <div>
+            <div class="asteroid-image"></div>
+            <span>Kick asteroid by leg and get 100 scores, it will fly back and destroy grifon or joker on it's path</span>
+        </div>
+        <div>
+            <div class="joker-image"></div>
+            <span>Kill joker by shooting and get 100 scores</span>
+        </div>
+        <div>
+            <div class="life-image"></div>
+            <span>Touch the heart and your life count will increase if it is less than three</span>
+        </div>
+        <div>
+            <div class="boss-image"></div>
+            <span>Kill the boss by shooting between 15 - 50 times</span>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/resources.js"></script>
+    <script type="text/javascript" src="js/input.js"></script>
+    <script type="text/javascript" src="js/sprite.js"></script>
+    <script type="text/javascript" src="js/constants.js"></script>
+    <script type="text/javascript" src="js/variables.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</body>
+
+</html>

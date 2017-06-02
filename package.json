@@ -1,0 +1,40 @@
+{
+  "name": "vitaliy-mileshko",
+  "version": "1.0.0",
+  "description": "Simple Game",
+  "main": "js/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MEthoD112"
+  },
+  "keywords": [
+    "game",
+    "canvas"
+  ],
+  "author": "Vitaliy Mileshko",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/MEthoD112"
+  },
+  "homepage": "https://github.com/MEthoD112",
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-config-standard": "^7.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-react": "^6.9.0",
+    "eslint-plugin-standard": "^2.1.1"
+  },
+  "peerDependencies": {
+    "eslint": "^3.18.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-react": "^6.10.3"
+  }
+}
